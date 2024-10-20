@@ -54,15 +54,16 @@ svg
       })
   .attr("r", 2)
   .attr("fill", (d) => {
-    try{
-      if(d.Name.toLowerCase().includes("mario")){
-      return "red";
-    }else{
-      return "grey";
+    try {
+      if (d.Name.toLowerCase().includes("mario")) {
+        return "red";
+      } else {
+        return "grey";
+      }
+    } catch (error) {
+      console.error(error);
     }
-    
-  }catch(console.error();
-  )
+  
 
   });
 
@@ -81,3 +82,4 @@ svg
 
 drawVis();
 
+// Ins Wehavethedata 
